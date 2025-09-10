@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etPlate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Plaka (örn: 06ABC123)"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:id="@+id/etProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ürün"
+            android:text="Motorin"/>
+
+        <EditText
+            android:id="@+id/etPump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pompa"
+            android:text="03"/>
+
+        <EditText
+            android:id="@+id/etNozzle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tabanca"
+            android:text="06"/>
+
+        <EditText
+            android:id="@+id/etLiters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Litre"
+            android:inputType="numberDecimal"
+            android:text="42.00"/>
+
+        <EditText
+            android:id="@+id/etUnitPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birim Fiyat (TL)"
+            android:inputType="numberDecimal"
+            android:text="41.25"/>
+
+        <EditText
+            android:id="@+id/etVatRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="KDV Oranı (örn: 0.20)"
+            android:inputType="numberDecimal"
+            android:text="0.20"/>
+
+        <EditText
+            android:id="@+id/etPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ödeme (NAKIT/KK)"
+            android:text="KK"/>
+
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fişi Yazdır"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
