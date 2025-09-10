@@ -1,3 +1,5 @@
+rootProject.name = "sunmi-pos"
+include(":app"
 pluginManagement {
   repositories {
     gradlePluginPortal()
