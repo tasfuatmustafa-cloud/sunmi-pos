@@ -1,3 +1,4 @@
+// === Root build.gradle (PROJECT LEVEL) ===
 buildscript {
     ext.kotlin_version = '1.9.24'
     repositories {
@@ -10,6 +11,7 @@ buildscript {
     }
 }
 
+// (AGP 8+ ile zorunlu değil ama güvenli)
 allprojects {
     repositories {
         google()
@@ -17,6 +19,7 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {
+// Temizlik
+tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
